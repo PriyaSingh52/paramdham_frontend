@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Registrartion Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+
+<body>
+ 
+<script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+
+<!-- Snippet -->
+<section class="antialiased bg-customGreen2 text-gray-600 min-h-screen py-4">
+    <div class="h-full">
+        <!-- Pay component -->
+        <div>
+            <!-- Card background -->
+            <div class="grid grid-cols-2 h-32 md:h-48 relative px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto rounded-lg">
+               <div class="h-32 md:h-48 w-full overflow-hidden"> <img class="rounded-tl-lg shadow-lg h-32 md:h-48 w-full hover:scale-110 transform transition-transform duration-500" src="images/volunteer1.webp" alt="Pay background" /></div>
+               <div class="bg-gradient-to-bl from-yellow-400/50 via-yellow-300/60 to-emerald-400/35  grid place-items-center rounded-tr-lg text-left ">
+                <h1 class="text-2xl md:text-4xl font-bold text-blue-400 pl-2">Volunteer Registration
+                    <p class="text-xs md:text-lg font-normal text-black">Where Passion Meets Purpose!</p>
+                </h1>
+                
+               </div>
+                
+            </div>
+            <!-- Card body -->
+            <div class="relative px-4 sm:px-6 lg:px-8 pb-8 max-w-4xl mx-auto" x-data="{ card: true }">
+                <div class="bg-white px-4 pb-6 rounded-b-lg shadow-lg">
+                    <!-- Card form --> 
+                    <div class="grid md:grid-cols-2 md:gap-6 pt-4">
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                            <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-greenborder-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                            <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+                        </div>
+                      </div>
+                      <div class="grid md:grid-cols-2 md:gap-6">
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                            <label for="email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone" id="phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                            <label for="phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-greborder-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
+                        </div>
+                      </div>
+                      
+                    
+                    <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="address" id="address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                        <label for="address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
+                    </div>
+                    <div class="grid md:grid-cols-2 md:gap-6 mt-4">
+                        <div class="relative z-0 w-full mb-5 group">
+                            <input type="number" name="age" id="age" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " min="18" required />
+                           <label for="age" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Age</label>
+
+                        </div>
+                        <div class="relative z-0 w-full mb-5 group">
+                            <select name="gender" id="gender" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" required>
+                                <option value="" disabled selected hidden>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="gender" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Gender</label>
+                        </div>
+                      </div>
+                      <div class="relative z-0 w-full mb-5 group">
+                        <input type="text" name="availability" id="availability" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required />
+                        <label for="availability" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Availability</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <textarea name="previousExperience" id="previousExperience" rows="3" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-700 focus:outline-none focus:ring-0 focus:border-green-700 peer" placeholder=" " required></textarea>
+                        <label for="previousExperience" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-green-700 peer-focus:dark:text-green-700 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Previous Experience</label>
+                    </div>
+                    <div class="relative z-0 w-full mb-5 group">
+                        <fieldset class="space-y-2">
+                            <legend class="block text-sm font-medium text-gray-700 dark:text-gray-400">How can you help us?</legend>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="companionship" name="helpOptions" value="companionship"
+                                    class="focus:ring-green-700 h-4 w-4 text-green-700 border-gray-300 dark:border-gray-600">
+                                <label for="companionship" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Companionship</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="assistance" name="helpOptions" value="assistance"
+                                    class="focus:ring-green-700 h-4 w-4 text-green-700 border-gray-300 dark:border-gray-600">
+                                <label for="assistance" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Assistance with daily tasks</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="fundraising" name="helpOptions" value="fundraising"
+                                    class="focus:ring-green-700 h-4 w-4 text-green-700 border-gray-300 dark:border-gray-600">
+                                <label for="fundraising" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Fundraising</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="advocacy" name="helpOptions" value="advocacy"
+                                    class="focus:ring-green-700 h-4 w-4 text-green-700 border-gray-300 dark:border-gray-600">
+                                <label for="advocacy" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Advocacy</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="eventPlanning" name="helpOptions" value="eventPlanning"
+                                    class="focus:ring-green-700 h-4 w-4 text-green-700 border-gray-300 dark:border-gray-600">
+                                <label for="eventPlanning" class="ml-2 block text-sm text-gray-900 dark:text-gray-300">Event planning</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit" class="bg-customGreen3 px-8 py-2 text-lg font-semibold border-2 transition-all duration-200 border-customGreen1 hover:bg-customGreen1 hover:text-customGreen2 hover:border-customGreen4 rounded-full">Submit</button>
+
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   
+</body>
+
+</html>
